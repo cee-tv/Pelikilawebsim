@@ -829,46 +829,6 @@ nav ul li a.active {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Adjust grid layouts for More Like This, My List, and Search */
-.similar-movies,
-.similar-shows,
-.my-list-content .cards-container,
-.search-results-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    overflow: visible;
-}
-
-.similar-movies .card,
-.similar-shows .card,
-.my-list-content .cards-container .card,
-.search-results-grid .card {
-    width: 100%;
-    min-width: unset;
-}
-
-/* Adjust media queries for grid responsiveness */
-@media (max-width: 768px) {
-    .similar-movies,
-    .similar-shows,
-    .my-list-content .cards-container,
-    .search-results-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .similar-movies,
-    .similar-shows,
-    .my-list-content .cards-container,
-    .search-results-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-    }
-}
-
 /* Media Queries */
 @media (max-width: 1200px) {
     .hero-content {
